@@ -348,3 +348,4 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+/PortfolioWebsite/Properties/ServiceDependencies/PortfolioWebsite20230402145536 - Web Deploy/profile.arm.json
