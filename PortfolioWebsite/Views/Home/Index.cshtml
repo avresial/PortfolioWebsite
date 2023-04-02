@@ -10,7 +10,7 @@
     <div class="row">
 
         <div class="col-lg-2">
-            <img src="@Model.ProfilePictureSrc" alt="@Model.ProfilePictureSrc" width="200" />
+            <img src="@Model.ProfilePictureSrc" alt="@Model.ProfilePictureSrc" width="200" class="img-fluid img-thumbnail" />
         </div>
 
         <div class="col">
@@ -27,7 +27,7 @@
     <div class="row border-bottom">
         <div class="col">
             <div class="row">
-                <img src="@Model.RumikAppSrc" alt="@Model.RumikAppSrc" width="200" />
+                <img src="@Model.RumikAppSrc" alt="@Model.RumikAppSrc" class="img-responsive" />
             </div>
             <div class="row">
                 <p class="text-center mt-4">RumikApp</p>
@@ -45,7 +45,7 @@
 
         <div class="col">
             <div class="row">
-                <img src="@Model.ViToolsSrc" alt="@Model.ViToolsSrc" width="200" />
+                <img src="@Model.ViToolsSrc" alt="@Model.ViToolsSrc" class="img-responsive" />
             </div>
 
             <div class="row">
@@ -53,7 +53,10 @@
             </div>
 
             <div class="row">
-                <p class="text-center"> App allows user to duplicate a dataset and convert xml annotations to YOLO format in order to train model in darknet.</p>
+                <p class="text-center">
+                    App allows user to duplicate a dataset and convert xml annotations to YOLO format in order to train model in darknet.
+                    <a class="nav-link text-primary" asp-area="" asp-controller="Home" asp-action="VITools">More</a>
+                </p>
 
             </div>
 
@@ -61,13 +64,16 @@
 
         <div class="col">
             <div class="row">
-                <img src="@Model.ExercisesSrc" alt="@Model.ExercisesSrc" width="200" />
+                <img src="@Model.ExercisesSrc" alt="@Model.ExercisesSrc" class="img-responsive" />
             </div>
             <div class="row">
                 <p class="text-center mt-4">Exercises</p>
             </div>
             <div class="row">
-                <p class="text-center">This is the place where i store code used in any courses i do.</p>
+                <p class="text-center">
+                    This is the place where i store code used in any courses i do.
+                    <a class="nav-link text-primary" asp-area="" asp-controller="Home" asp-action="Exercises">More</a>
+                </p>
             </div>
         </div>
     </div>

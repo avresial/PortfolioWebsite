@@ -28,6 +28,16 @@ namespace PortfolioWebsite.Controllers
             return View();
         }
         
+        public IActionResult Exercises()
+        {
+            return View();
+        }
+
+        public IActionResult VITools()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
