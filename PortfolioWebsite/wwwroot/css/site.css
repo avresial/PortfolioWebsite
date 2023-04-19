@@ -44,7 +44,19 @@ div {
     transition: all 1s;
 }
 
-    .tag.visible {
-        opacity: 1;
-        transform: translate(0, 0);
-    }
+.tag.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+#CoverImage {
+    margin:0px;
+    padding:0px;
+    background-image: url("/Images/CoverPhoto.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+
+

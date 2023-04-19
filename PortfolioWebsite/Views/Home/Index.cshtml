@@ -3,107 +3,112 @@
     ViewData["Title"] = "Home Page";
 }
 
-<section class="text-center py-3 border-bottom fade-in">
-
-    <div class="row">
-        <h1 class="display-4 text-center">Hi </h1>
-    </div>
+<div class="row" id="CoverImage" style="width:100vw;">
     <div class="row" style="height:60vh;">
-
-        <div class="col-lg-6" style="margin:auto;">
-            <p>
-                I'm passionate .Net developer based in Gliwice, Poland with 2+ years of comertial experience. Currently employed as a desktop developer.
-                Using cutting edge AI technology I designed and coded a solution that conducts semi-automatic navigation for trains, therefore saves railway operator more than 50% of work.
-                I graduated from silesian university of technology with ID masters degree.
-                I aim to be backend .NET developer who happily works in a team and shares his knowladge.
-            </p>
-        </div>
+        <h1 class="display-4 text-center" style="margin:auto;">Hi </h1>
     </div>
-
-    <div class="row">
+    <div class="row" style="color: white;">
         <p class="text-center opacity-50">
             Scroll down
         </p>
 
         <i class="bi bi-chevron-double-down m-auto opacity-75 text-center"></i>
     </div>
-</section>
+</div>
 
-<section class="container my-5 tag">
-    <h4 class="text-center my-4">Projects</h4>
+<div class="container">
+    <main role="main">
+        <section class="text-center py-3 border-bottom tag">
+            <div class="row" style="height:60vh;">
 
-    <div class="row border-bottom">
-        <div class="col">
-            <div class="row">
-                <img src="@Model.RumikAppSrc" alt="@Model.RumikAppSrc" class="img-responsive" />
+                <div class="col-lg-6" style="margin:auto;">
+                    <p>
+                        I'm passionate .Net developer based in Gliwice, Poland with 2+ years of comertial experience. Currently employed as a desktop developer.
+                        Using cutting edge AI technology I designed and coded a solution that conducts semi-automatic navigation for trains, therefore saves railway operator more than 50% of work.
+                        I graduated from silesian university of technology with ID masters degree.
+                        I aim to be backend .NET developer who happily works in a team and shares his knowladge.
+                    </p>
+                </div>
             </div>
-            <div class="row">
-                <p class="text-center mt-4">RumikApp</p>
+        </section>
+
+        <section class="container my-5 tag">
+            <h4 class="text-center my-4">Projects</h4>
+
+            <div class="row border-bottom">
+                <div class="col">
+                    <div class="row">
+                        <img src="@Model.RumikAppSrc" alt="@Model.RumikAppSrc" class="img-responsive" />
+                    </div>
+                    <div class="row">
+                        <p class="text-center mt-4">RumikApp</p>
+                    </div>
+
+                    <div class="row">
+                        <p class="text-center">
+                            App allows user to browse, save and edit information about beverages.
+                            <a class="nav-link text-primary" asp-area="" asp-controller="Home" asp-action="RumikApp">More</a>
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col ">
+                    <div class="row">
+                        <img src="@Model.ViToolsSrc" alt="@Model.ViToolsSrc" class="img-responsive" />
+                    </div>
+
+                    <div class="row">
+                        <p class="text-center mt-4"> ViTools</p>
+                    </div>
+
+                    <div class="row">
+                        <p class="text-center">
+                            App allows user to duplicate a dataset and convert xml annotations to YOLO format in order to train model in darknet.
+                            <a class="nav-link text-primary" asp-area="" asp-controller="Home" asp-action="VITools">More</a>
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col">
+                    <div class="row">
+                        <img src="@Model.ExercisesSrc" alt="@Model.ExercisesSrc" class="img-responsive" />
+                    </div>
+                    <div class="row">
+                        <p class="text-center mt-4">Exercises</p>
+                    </div>
+                    <div class="row">
+                        <p class="text-center">
+                            This is the place where i store code used in any courses i do.
+                            <a class="nav-link text-primary" asp-area="" asp-controller="Home" asp-action="Exercises">More</a>
+                        </p>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div class="row">
-                <p class="text-center">
-                    App allows user to browse, save and edit information about beverages.
-                    <a class="nav-link text-primary" asp-area="" asp-controller="Home" asp-action="RumikApp">More</a>
-                </p>
+        <section class="container my-5 tag">
+            <div class="row text-center mt-5 tag">
+                <div class="row text-center">
+                    <h3>Social media</h3>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <a href="https://www.instagram.com/mikikarkowski/" class="link-secondary"><i class="bi bi-instagram green" style="font-size: 50px"></i></a>
+                    </div>
 
+                    <div class="col">
+                        <a href="https://www.linkedin.com/in/miko%C5%82aj-karkowski-publicurl/" class="link-secondary"><i class="bi bi-linkedin" style="font-size: 50px"></i></a>
+                    </div>
+
+                    <div class="col">
+                        <a href="https://github.com/avresial" class="link-secondary"><i class="bi bi-github fa-6x" style="font-size: 50px"></i></a>
+                    </div>
+                </div>
             </div>
-
-        </div>
-
-        <div class="col ">
-            <div class="row">
-                <img src="@Model.ViToolsSrc" alt="@Model.ViToolsSrc" class="img-responsive" />
-            </div>
-
-            <div class="row">
-                <p class="text-center mt-4"> ViTools</p>
-            </div>
-
-            <div class="row">
-                <p class="text-center">
-                    App allows user to duplicate a dataset and convert xml annotations to YOLO format in order to train model in darknet.
-                    <a class="nav-link text-primary" asp-area="" asp-controller="Home" asp-action="VITools">More</a>
-                </p>
-
-            </div>
-
-        </div>
-
-        <div class="col">
-            <div class="row">
-                <img src="@Model.ExercisesSrc" alt="@Model.ExercisesSrc" class="img-responsive" />
-            </div>
-            <div class="row">
-                <p class="text-center mt-4">Exercises</p>
-            </div>
-            <div class="row">
-                <p class="text-center">
-                    This is the place where i store code used in any courses i do.
-                    <a class="nav-link text-primary" asp-area="" asp-controller="Home" asp-action="Exercises">More</a>
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="container my-5 tag">
-    <div class="row text-center mt-5 tag">
-        <div class="row">
-            <h3>Social media</h3>
-        </div>
-        <div class="row">
-            <div class="col">
-                <a href="https://www.instagram.com/mikikarkowski/" class="link-secondary"><i class="bi bi-instagram green" style="font-size: 50px"></i></a>
-            </div>
-
-            <div class="col">
-                <a href="https://www.linkedin.com/in/miko%C5%82aj-karkowski-publicurl/" class="link-secondary"><i class="bi bi-linkedin" style="font-size: 50px"></i></a>
-            </div>
-
-            <div class="col">
-                <a href="https://github.com/avresial" class="link-secondary"><i class="bi bi-github fa-6x" style="font-size: 50px"></i></a>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
+    </main>
+</div>
