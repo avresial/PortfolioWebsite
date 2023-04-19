@@ -3,27 +3,29 @@
     ViewData["Title"] = "Home Page";
 }
 
-<section class="text-center py-3 border-bottom fade-in" style="margin-bottom: 100px;">
+<section class="text-center py-3 border-bottom fade-in">
+
     <div class="row">
-        <h1 class="display-4">Hi </h1>
+        <h1 class="display-4 text-center">Hi </h1>
     </div>
-    <div class="row">
+    <div class="row" style="height:60vh;">
 
-        <div class="col-lg-2 ">
-            <img src="@Model.ProfilePictureSrc" alt="@Model.ProfilePictureSrc" width="200" class="img-fluid img-thumbnail" />
-        </div>
-
-        <div class="col">
-            <p class="text-center ">
-                I'm .Net developer based in Gliwice, Poland. I Specialize in WPF desktop applications.
+        <div class="col-lg-6" style="margin:auto;">
+            <p>
+                I'm passionate .Net developer based in Gliwice, Poland with 2+ years of comertial experience. Currently employed as a desktop developer.
+                Using cutting edge AI technology I designed and coded a solution that conducts semi-automatic navigation for trains, therefore saves railway operator more than 50% of work.
+                I graduated from silesian university of technology with ID masters degree.
+                I aim to be backend .NET developer who happily works in a team and shares his knowladge.
             </p>
         </div>
     </div>
-    <div class="row " >
-        <p class=" text-center opacity-50">
+
+    <div class="row">
+        <p class="text-center opacity-50">
             Scroll down
         </p>
-        <i class="bi bi-chevron-double-down m-auto opacity-75"></i>
+
+        <i class="bi bi-chevron-double-down m-auto opacity-75 text-center"></i>
     </div>
 </section>
 
