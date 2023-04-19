@@ -28,7 +28,7 @@ namespace PortfolioWebsite.Controllers
             return View();
         }
         
-        public IActionResult Exercises()
+        public IActionResult Website()
         {
             return View();
         }

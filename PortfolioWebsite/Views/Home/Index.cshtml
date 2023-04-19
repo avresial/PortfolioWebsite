@@ -3,20 +3,23 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="row" id="CoverImage" style="width:100vw;">
+<div class="row" id="CoverImage">
     <div class="row" style="height:60vh;">
-        <h1 class="display-4 text-center" style="margin:auto;">Hi </h1>
+        <div class="display-4 text-center" style="margin:auto;">
+            <h1>Hi </h1>
+            <h2 style="animation: fadeInAnimationDelay ease 2s;">I'm Mikołaj Karkowski </h2>
+        </div>
     </div>
     <div class="row" style="color: white;">
         <p class="text-center opacity-50">
             Scroll down
         </p>
 
-        <i class="bi bi-chevron-double-down m-auto opacity-75 text-center"></i>
+        <i class="bi bi-chevron-double-down m-auto opacity-75 text-center upAndDownAnimation"></i>
     </div>
 </div>
 
-<div class="container">
+<div class="container mb-3">
     <main role="main">
         <section class="text-center py-3 border-bottom tag">
             <div class="row" style="height:60vh;">
@@ -25,7 +28,7 @@
                     <p>
                         I'm passionate .Net developer based in Gliwice, Poland with 2+ years of comertial experience. Currently employed as a desktop developer.
                         Using cutting edge AI technology I designed and coded a solution that conducts semi-automatic navigation for trains, therefore saves railway operator more than 50% of work.
-                        I graduated from silesian university of technology with ID masters degree.
+                        I graduated from silesian university of technology with IT masters degree.
                         I aim to be backend .NET developer who happily works in a team and shares his knowladge.
                     </p>
                 </div>
@@ -53,6 +56,21 @@
                     </div>
 
                 </div>
+                
+                <div class="col">
+                    <div class="row">
+                        <img src="@Model.WebsiteSrc" alt="@Model.WebsiteSrc" class="img-responsive" />
+                    </div>
+                    <div class="row">
+                        <p class="text-center mt-4">This website</p>
+                    </div>
+                    <div class="row">
+                        <p class="text-center">
+                            This is my personal site.
+                            <a class="nav-link text-primary" asp-area="" asp-controller="Home" asp-action="Website">More</a>
+                        </p>
+                    </div>
+                </div>
 
                 <div class="col ">
                     <div class="row">
@@ -72,40 +90,31 @@
                     </div>
 
                 </div>
-
-                <div class="col">
-                    <div class="row">
-                        <img src="@Model.ExercisesSrc" alt="@Model.ExercisesSrc" class="img-responsive" />
-                    </div>
-                    <div class="row">
-                        <p class="text-center mt-4">Exercises</p>
-                    </div>
-                    <div class="row">
-                        <p class="text-center">
-                            This is the place where i store code used in any courses i do.
-                            <a class="nav-link text-primary" asp-area="" asp-controller="Home" asp-action="Exercises">More</a>
-                        </p>
-                    </div>
-                </div>
             </div>
         </section>
 
-        <section class="container my-5 tag">
+        <section class="my-5 tag">
             <div class="row text-center mt-5 tag">
                 <div class="row text-center">
                     <h3>Social media</h3>
                 </div>
                 <div class="row">
-                    <div class="col">
-                        <a href="https://www.instagram.com/mikikarkowski/" class="link-secondary"><i class="bi bi-instagram green" style="font-size: 50px"></i></a>
+                    <div class="col text-center">
+                        <a href="https://www.instagram.com/mikikarkowski/" class="link-secondary">
+                            <i class="bi bi-instagram green" style="font-size: 50px"></i>
+                        </a>
                     </div>
 
-                    <div class="col">
-                        <a href="https://www.linkedin.com/in/miko%C5%82aj-karkowski-publicurl/" class="link-secondary"><i class="bi bi-linkedin" style="font-size: 50px"></i></a>
+                    <div class="col text-center">
+                        <a href="https://www.linkedin.com/in/miko%C5%82aj-karkowski-publicurl/" class="link-secondary">
+                            <i class="bi bi-linkedin" style="font-size: 50px"></i>
+                        </a>
                     </div>
 
-                    <div class="col">
-                        <a href="https://github.com/avresial" class="link-secondary"><i class="bi bi-github fa-6x" style="font-size: 50px"></i></a>
+                    <div class="col text-center">
+                        <a href="https://github.com/avresial" class="link-secondary ">
+                            <i class="bi bi-github fa-6x" style="font-size: 50px"></i>
+                        </a>
                     </div>
                 </div>
             </div>
