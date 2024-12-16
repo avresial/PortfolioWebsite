@@ -8,5 +8,6 @@
         public string RumikAppSrc = @"Images/RumikApp.jpg";
         public string DotNetIcon = @"Images/Icons/dotNetIcon.png";
         public string ViToolsSrc = @"Images/ViTools.jpg";
+        public string FinanceManagerSrc = @"Images/FinanceManager.jpg";
     }
 }
