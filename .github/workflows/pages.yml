@@ -27,7 +27,7 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
-      - run: npm run build -- --base-href /PortfolioWebsite/
+      - run: npm run build -- --base-href /
       - run: cp dist/portfolio-website/browser/index.html dist/portfolio-website/browser/404.html
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
