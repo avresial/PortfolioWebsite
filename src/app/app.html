@@ -1,0 +1,33 @@
+<header class="site-header">
+  <a class="brand" routerLink="/" aria-label="Mikołaj Karkowski — home">
+    <span>MK</span>
+    <strong>Mikołaj Karkowski</strong>
+  </a>
+
+  <nav aria-label="Primary navigation">
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Work</a>
+    <a routerLink="/cv" routerLinkActive="active">CV</a>
+    <a href="mailto:mikikarkowski@gmail.com">Email</a>
+  </nav>
+
+  <div class="theme-switcher" aria-label="Colour theme">
+    @for (option of ['auto', 'light', 'dark']; track option) {
+      <button
+        type="button"
+        [class.active]="theme() === option"
+        [attr.aria-pressed]="theme() === option"
+        (click)="setTheme($any(option))"
+      >{{ option }}</button>
+    }
+  </div>
+</header>
+
+<main><router-outlet /></main>
+
+<footer>
+  <span>Built with Angular &amp; PrimeNG.</span>
+  <div>
+    <a href="https://github.com/avresial" target="_blank" rel="noreferrer">GitHub</a>
+    <a href="https://www.linkedin.com/in/miko%C5%82aj-karkowski/" target="_blank" rel="noreferrer">LinkedIn</a>
+  </div>
+</footer>
