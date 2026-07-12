@@ -1,0 +1,62 @@
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">Full-stack .NET Engineer · Gliwice, Poland</p>
+    <h1>I build software that turns complex systems into clear, dependable products.</h1>
+    <p class="lead">From AI-assisted railway tools and rich WPF clients to real-time web platforms, I design and ship complete .NET solutions with pragmatic architecture and thoughtful interfaces.</p>
+    <div class="actions">
+      <p-button label="Explore my work" icon="pi pi-arrow-down" severity="contrast" (onClick)="projects.scrollIntoView({ behavior: 'smooth' })" />
+      <p-button label="View CV" icon="pi pi-file" [outlined]="true" routerLink="/cv" />
+    </div>
+  </div>
+  <div class="hero-image"><img src="assets/mountains.jpg" alt="Layered mountain landscape photographed by Mikołaj Karkowski" /></div>
+</section>
+
+<section class="proof" aria-label="Experience highlights">
+  <div><strong>7+ years</strong><span>commercial software development</span></div>
+  <div><strong>End to end</strong><span>web, desktop, data and delivery</span></div>
+  <div><strong>AI in production</strong><span>computer vision and LLM integrations</span></div>
+</section>
+
+<section class="intro">
+  <p class="eyebrow">What I bring</p>
+  <h2>A product-minded engineer with depth across the stack.</h2>
+  <div class="capabilities">
+    <article><i class="pi pi-server"></i><h3>Backend &amp; architecture</h3><p>ASP.NET Core, EF Core, PostgreSQL and SQL Server. Modular monoliths, domain boundaries, typed APIs and background processing.</p></article>
+    <article><i class="pi pi-desktop"></i><h3>Web &amp; desktop</h3><p>Blazor WebAssembly, Angular, SignalR and WPF/MVVM. Responsive experiences built around the user’s real workflow.</p></article>
+    <article><i class="pi pi-sparkles"></i><h3>Applied AI</h3><p>LLM provider chains, AI-assisted workflows and YOLO computer vision systems that solve operational problems.</p></article>
+    <article><i class="pi pi-cog"></i><h3>Delivery &amp; quality</h3><p>GitHub Actions, Docker, .NET Aspire, OpenTelemetry and focused automated testing with xUnit, NUnit and Moq.</p></article>
+  </div>
+</section>
+
+<section class="projects" #projects>
+  <div class="section-heading"><div><p class="eyebrow">Selected work</p><h2>Products, not toy projects.</h2></div><a href="https://github.com/avresial" target="_blank" rel="noreferrer">All repositories <i class="pi pi-arrow-up-right"></i></a></div>
+
+  <article class="project">
+    <div class="project-image"><img src="assets/finance-manager.png" alt="FinanceManager analytics dashboard" /></div>
+    <div class="project-copy">
+      <span class="number">01</span><h3>FinanceManager</h3>
+      <p>An open-source personal finance platform that unifies cash, stocks and bonds with live market data, AI-generated insights and rich analytics.</p>
+      <ul><li>Layered modular monolith with a dependency-free domain layer</li><li>Real-time import progress through SignalR and background channels</li><li>Resilient AI provider chain spanning cloud and local models</li></ul>
+      <div class="tags"><p-tag value=".NET 10" /><p-tag value="Blazor WASM" /><p-tag value="PostgreSQL" /><p-tag value="OpenTelemetry" /></div>
+      <div class="links"><a href="https://financemanager.mikikarkowski.dev" target="_blank" rel="noreferrer">Live app <i class="pi pi-arrow-up-right"></i></a><a href="https://github.com/avresial/FinanceManager" target="_blank" rel="noreferrer">Source <i class="pi pi-github"></i></a></div>
+    </div>
+  </article>
+
+  <article class="project reverse">
+    <div class="project-image"><img src="assets/kotlet.png" alt="Kotlet meal planning application landing page" /></div>
+    <div class="project-copy">
+      <span class="number">02</span><h3>Kotlet</h3>
+      <p>A connected kitchen workspace for recipes, pantry stock, meal planning and shopping—designed around how households actually prepare food.</p>
+      <ul><li>28-day meal planning with servings, nutrition and cost calculations</li><li>AI-assisted recipe import from YouTube and TikTok</li><li>Shared ingredient catalogue connecting every product workflow</li></ul>
+      <div class="tags"><p-tag value=".NET" /><p-tag value="Blazor" /><p-tag value="AI workflows" /><p-tag value="Full-stack" /></div>
+      <div class="links"><a href="https://avresial.github.io/Kotlet/" target="_blank" rel="noreferrer">Live app <i class="pi pi-arrow-up-right"></i></a><a href="https://github.com/avresial/Kotlet" target="_blank" rel="noreferrer">Source <i class="pi pi-github"></i></a></div>
+    </div>
+  </article>
+</section>
+
+<section class="experience">
+  <p class="eyebrow">Commercial impact</p><h2>Engineering for the physical world.</h2>
+  <div class="experience-grid"><p>At Graw / Goldschmidt Group, I build and maintain web and desktop software for railway measurement and inspection systems—working directly with clients to turn specialized requirements into reliable tools.</p><ul><li>Blazor WebAssembly and .NET MAUI Hybrid interfaces for live camera, laser and equipment data</li><li>WPF tools for measurements, defect review and real-time equipment diagnostics</li><li>AI-assisted train navigation and YOLO-based rail object detection</li></ul></div>
+</section>
+
+<section class="contact"><p class="eyebrow">Let’s build something useful</p><h2>Looking for a full-stack .NET engineer?</h2><p>I’m open to opportunities where strong engineering, product thinking and practical AI meet.</p><a pButton href="mailto:mikikarkowski@gmail.com"><i class="pi pi-envelope"></i><span pButtonLabel>mikikarkowski@gmail.com</span></a></section>
