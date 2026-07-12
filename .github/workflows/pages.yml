@@ -29,6 +29,7 @@ jobs:
       - run: npm ci
       - run: npm run build -- --base-href /
       - run: cp dist/portfolio-website/browser/index.html dist/portfolio-website/browser/404.html
+      - run: mkdir -p dist/portfolio-website/browser/cv && cp dist/portfolio-website/browser/index.html dist/portfolio-website/browser/cv/index.html
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:
